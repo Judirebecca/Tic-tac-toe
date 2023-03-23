@@ -43,7 +43,7 @@ class homepageView extends StatelessWidget {
               const SizedBox(height :20),
               Observer(
                 builder: (context) {
-                  return Text(_homepage.winner, style: const TextStyle(color:Colors.black, fontSize: 20),);
+                  return Text(_homepage.winner, style: const TextStyle(color:Colors.yellow, fontSize: 20),);
                 }
               ),
               Column(children: [
@@ -67,7 +67,7 @@ class homepageView extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w600,
-                        color: Colors.black)),
+                        color: Colors.yellow)),
                 const SizedBox(
                   height: 20,
                 ),

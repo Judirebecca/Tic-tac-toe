@@ -48,6 +48,9 @@ class HomepageVM extends homepagemodel {
       winner = "${collectionOfvalues[0]} is winner";
       a = true;
       await Future.delayed(const Duration(seconds: 03));
+      if (a == true) {
+        reset();
+      }
       return;
     }
     // Checking the second row
@@ -57,6 +60,9 @@ class HomepageVM extends homepagemodel {
       winner = "${collectionOfvalues[3]} is winner";
       a = true;
       await Future.delayed(const Duration(seconds: 03));
+      if (a == true) {
+        reset();
+      }
       return;
     }
     // checking the third row
@@ -66,6 +72,9 @@ class HomepageVM extends homepagemodel {
       winner = "${collectionOfvalues[6]} is winner";
       a = true;
       await Future.delayed(const Duration(seconds: 03));
+      if (a == true) {
+        reset();
+      }
       return;
     }
     //checking the first column
@@ -75,6 +84,9 @@ class HomepageVM extends homepagemodel {
       winner = "${collectionOfvalues[0]} is winner";
       a = true;
       await Future.delayed(const Duration(seconds: 03));
+      if (a == true) {
+        reset();
+      }
       return;
     }
     // checking the second column
@@ -84,6 +96,9 @@ class HomepageVM extends homepagemodel {
       winner = "${collectionOfvalues[1]} is winner";
       a = true;
       await Future.delayed(const Duration(seconds: 03));
+      if (a == true) {
+        reset();
+      }
       return;
     }
     // checking the third column
@@ -93,6 +108,9 @@ class HomepageVM extends homepagemodel {
       winner = "${collectionOfvalues[2]} is winner";
       a = true;
       await Future.delayed(const Duration(seconds: 03));
+      if (a == true) {
+        reset();
+      }
       return;
     }
     // checking the diagonals
@@ -102,6 +120,9 @@ class HomepageVM extends homepagemodel {
       winner = "${collectionOfvalues[0]} is winner";
       a = true;
       await Future.delayed(const Duration(seconds: 03));
+      if (a == true) {
+        reset();
+      }
       return;
     } else if (collectionOfvalues[2] == collectionOfvalues[4] &&
         collectionOfvalues[4] == collectionOfvalues[6] &&
@@ -109,6 +130,9 @@ class HomepageVM extends homepagemodel {
       winner = "${collectionOfvalues[2]} is winner";
       a = true;
       await Future.delayed(const Duration(seconds: 03));
+      if (a == true) {
+        reset();
+      }
       return;
     }
     // Draw condition 
@@ -123,10 +147,10 @@ class HomepageVM extends homepagemodel {
         collectionOfvalues[8] != "") {
       winner = "DRAW";
       await Future.delayed(const Duration(seconds: 03));
-    }
-    if (a == true) {
+      if (a == true) {
         reset();
       }
+    }
     a = false;
   }
 }
