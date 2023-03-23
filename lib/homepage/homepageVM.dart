@@ -147,6 +147,7 @@ class HomepageVM extends homepagemodel {
         collectionOfvalues[8] != "") {
       winner = "DRAW";
       await Future.delayed(const Duration(seconds: 03));
+      a = true;
       if (a == true) {
         reset();
       }
