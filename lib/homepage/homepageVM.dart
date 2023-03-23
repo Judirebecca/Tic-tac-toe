@@ -21,7 +21,7 @@ class HomepageVM extends homepagemodel {
   }
 
   void tappeditem(int index) {
-    if (collectionOfvalues[index] == "") {
+    if (winner == "" && collectionOfvalues[index] == "" ) {
       if (iscrossassigned) {
         collectionOfvalues[index] = "circle";
         iscrossassigned = false;
