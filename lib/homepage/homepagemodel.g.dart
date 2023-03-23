@@ -25,6 +25,20 @@ mixin _$homepagemodel on _homepagemodelBase, Store {
     });
   }
 
+  late final _$_homepagemodelBaseActionController =
+      ActionController(name: '_homepagemodelBase', context: context);
+
+  @override
+  void setwinner({required dynamic winner}) {
+    final _$actionInfo = _$_homepagemodelBaseActionController.startAction(
+        name: '_homepagemodelBase.setwinner');
+    try {
+      return super.setwinner(winner: winner);
+    } finally {
+      _$_homepagemodelBaseActionController.endAction(_$actionInfo);
+    }
+  }
+
   @override
   String toString() {
     return '''

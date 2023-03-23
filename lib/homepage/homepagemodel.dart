@@ -11,10 +11,13 @@ abstract class _homepagemodelBase with Store {
   bool iscrossassigned = false;
 
   bool a = false;
+  
   void setstatus({required bool a})=> this.a = a;
 
   @observable
   var winner = "";
+  
+  @action
    void setwinner({required var winner})=> this.winner = winner;
 
   
