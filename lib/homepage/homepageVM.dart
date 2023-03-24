@@ -38,6 +38,7 @@ class HomepageVM extends homepagemodel {
       collectionOfvalues[i] = "";
     }
     winner = "";
+    iscrossassigned = false;
   }
 
   winnerstatus() async {

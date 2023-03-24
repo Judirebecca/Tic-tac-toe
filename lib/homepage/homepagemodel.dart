@@ -6,7 +6,11 @@ class homepagemodel = _homepagemodelBase with _$homepagemodel;
 
 abstract class _homepagemodelBase with Store {
   // Declare a variable count and set its value to zero
-  ObservableList<String> collectionOfvalues = ObservableList();
+  @observable
+  List<String> collectionOfvalues = [];
+
+  @action
+  void setvalue({required List<String> collectionOfvalues})=> this.collectionOfvalues = collectionOfvalues;
 
   bool iscrossassigned = false;
 
